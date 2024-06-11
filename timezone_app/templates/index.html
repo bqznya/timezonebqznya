@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Часовые пояса с различной датой</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5 text-center">Часовые пояса с различной датой относительно Екатеринбурга</h1>
+        <div class="current-date mt-4 text-center">
+            <p>Текущая дата в Екатеринбурге: <span id="ekbDate"></span></p>
+        </div>
+        <div class="table-responsive mt-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th data-sort="name">Местоположение <i class="fas fa-sort"></i></th>
+                        <th data-sort="region">Регион <i class="fas fa-sort"></i></th>
+                        <th data-sort="current_date">Текущая дата <i class="fas fa-sort"></i></th>
+                        <th data-sort="time">Текущее время <i class="fas fa-sort"></i></th>
+                        <th data-sort="offset">Смещение UTC <i class="fas fa-sort"></i></th>
+                    </tr>
+                </thead>
+                <tbody id="timezones"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
